@@ -1,0 +1,27 @@
+.our-team-social-link-icon {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+
+.our-team-social-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.our-team-social-link:hover,
+.our-team-social-link:focus {
+  background-color: #2196f3;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.our-team-social-link :hover .our-team-social-link-icon,
+.our-team-social-link:focus .our-team-social-link-icon {
+  fill: white;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

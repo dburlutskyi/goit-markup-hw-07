@@ -1,0 +1,26 @@
+.portfolio-list-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  /* identical to box height, or 162% */
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  background: #f5f4fa;
+  border-radius: 4px;
+  border: hidden;
+  color: var(--basic-color);
+  margin-left: 8px;
+  padding: 6px 22px;
+}
+
+.footer-btn-text {
+  font-style: 400;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  /* identical to box height, or 187% */
+  letter-spacing: 0.06em;
+
+  color: #ffffff;
+}

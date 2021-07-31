@@ -1,0 +1,24 @@
+// UTILS
+@import "./utils/variables";
+@import "./utils/visually-hidden";
+
+//BASE
+@import "./base/common";
+@import "./base/container";
+
+//COMPONENTS
+@import "./components/text-styles";
+@import "./components/tittle";
+@import "./components/social-link-list";
+@import "./components/backdrop";
+@import "./components/modal-btn";
+
+//LAYOUT
+
+@import "./layout/header.scss";
+@import "./layout/herou.scss";
+@import "./layout/features.scss";
+@import "./layout/activity.scss";
+@import "./layout/our-team-and-regular-customers.scss";
+@import "./layout/portfolio.scss";
+@import "./layout/footer.scss";
