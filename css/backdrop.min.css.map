@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,SAAS,AAAC,CACR,QAAQ,CAAE,KAAK,CACf,GAAG,CAAE,CAAC,CACN,IAAI,CAAE,CAAC,CACP,KAAK,CAAE,KAAK,CACZ,MAAM,CAAE,KAAK,CACb,gBAAgB,CAAE,eAAkB,CACpC,UAAU,CAAE,OAAO,CAAC,KAAK,CAAC,4BAA4B,CACpD,UAAU,CAAC,KAAK,CAAC,4BAA4B,CAChD,AAED,AAAA,mBAAmB,AAAC,CAClB,IAAI,CAAE,OAAO,CACb,KAAK,CAAE,IAAI,CACX,MAAM,CAAE,IAAI,CACb",
-    "sources": [
-        "../sass/components/backdrop.scss"
-    ],
-    "names": [],
-    "file": "backdrop.min.css"
-}
