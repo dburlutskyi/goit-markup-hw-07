@@ -58,17 +58,17 @@
 .social-list__icon {
   width: 44px;
   height: 44px;
+
+  .social-list__item-link:hover &,
+  .social-list__item-link:focus & {
+    fill: #2196f3;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .social-list__item-link:hover,
 .social-list__item-link:focus {
   background-color: #2196f3;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.social-list__item-link:hover .social-list__item-icon,
-.social-list__item-link:focus .social-list__item-icon {
-  fill: #2196f3;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -182,10 +182,9 @@
 
 .footer-input-text {
   color: #ffffff;
-}
-
-.footer-input-text:focus {
-  outline: none;
+  &:focus {
+    outline: none;
+  }
 }
 
 .footer-send-email-button {
@@ -199,11 +198,10 @@
   align-items: center;
   margin-left: 12px;
   cursor: pointer;
-}
-
-.footer-send-email-button:hover,
-.footer-send-email-button:focus {
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .footer-btn-text {

@@ -43,15 +43,16 @@
   letter-spacing: 0.02em;
 
   color: #212121;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .menu-link.current {
   color: var(--accent-color);
-}
-.menu-link:hover,
-.menu-link:focus {
-  color: var(--accent-color);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-item {
@@ -78,12 +79,11 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
-}
-
-.header-contacts:hover,
-.header-contacts:focus {
-  color: var(--accent-color);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .portfolio {

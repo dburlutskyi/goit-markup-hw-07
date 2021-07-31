@@ -1,24 +1,212 @@
-.portfolio-list-btn {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  /* identical to box height, or 162% */
-  text-align: center;
-  letter-spacing: 0.03em;
-  cursor: pointer;
-  background: #f5f4fa;
-  border-radius: 4px;
-  border: hidden;
-  color: var(--basic-color);
-  margin-left: 8px;
-  padding: 6px 22px;
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 528px;
+  height: 580px;
+  background-color: #ffffff;
+  transform: translate(-50%, -50%);
 }
 
-.footer-btn-text {
+.modal-form {
+  padding: 40px;
+  display: flex;
+}
+
+.modal-form {
+  flex-direction: column;
+}
+
+.modal-form-head {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 12px;
+
+  color: #212121;
+}
+
+.modal-form-input-wrapper {
+  position: relative;
+  margin-top: 4px;
+  display: block;
+}
+
+.modal-form-input {
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  height: 40px;
+  padding-left: 42px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus {
+    outline: none;
+    border-color: #2196f3;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.modal-form-field {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.66;
+  /* identical to box height */
+  letter-spacing: 0.01em;
+  margin-bottom: 10px;
+  position: relative;
+
+  color: #757575;
+}
+
+.modal-form-input-link {
+  display: flex;
+  width: 18px;
+  height: 18px;
+  align-items: center;
+  justify-content: center;
+  border: inherit;
+  background-color: #ffffff;
+}
+
+.modal-form-icon {
+  display: block;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .modal-form-input:focus + & {
+    fill: var(--accent-color);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.modal-form-message {
+  width: 100%;
+  height: 120px;
+  margin-top: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 12px 16px;
+  resize: none;
+}
+
+.modal-form-message {
+  outline: none;
+  border-color: var(--accent-color);
+  transform: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &::placeholder {
+    color: #ffffff;
+  }
+
+  &::focus {
+    outline: none;
+    border-color: var(--accent-color);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.modal-form-checkbox-label {
+  display: flex;
+  font-size: 12px;
+  align-items: center;
+  margin-bottom: 20px;
+  &::before {
+    display: block;
+    width: 16px;
+    height: 15px;
+    border: 1px solid #303030;
+    cursor: pointer;
+    content: "";
+    margin-right: 10px;
+  }
+}
+
+.modal-form-btn {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  border: inherit;
+}
+
+.modal-form-btn-send {
   font-style: 400;
   font-weight: bold;
   font-size: 16px;
-  line-height: 1.87;
+  line-height: 1.85;
+  /* identical to box height, or 187% */
+  letter-spacing: 0.06em;
+
+  color: #ffffff;
+}
+
+.modal-form-checkbox:checked + .modal-form-checkbox-label::before {
+  width: 16px;
+  height: 15px;
+  border: inherit;
+  outline: 2px solid rgb(64, 64, 114);
+}
+
+.close-btn {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+  cursor: pointer;
+  top: 8px;
+  right: 8px;
+  padding: 0;
+}
+
+.modal-form-checkbox-label::before {
+  display: block;
+  width: 16px;
+  height: 15px;
+  border: 1px solid #303030;
+  cursor: pointer;
+  content: "";
+  margin-right: 10px;
+}
+
+.modal-form-checkbox-label {
+  display: flex;
+  font-size: 12px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.modal-form-btn {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  border: inherit;
+}
+
+.modal-form-btn-send {
+  font-style: 400;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.85;
   /* identical to box height, or 187% */
   letter-spacing: 0.06em;
 
