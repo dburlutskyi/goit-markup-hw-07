@@ -1,10 +1,10 @@
-.features-list {
+.features {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
 }
 
-.features-icon {
+.features__icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14,24 +14,13 @@
   border-radius: 4px;
 }
 
-.features-list-item {
+.features__list-item {
   flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
   margin-top: 94px;
 }
 
-.features-title {
-  margin-top: 30px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-
-  color: #212121;
-}
-
-.features-text {
+.features__text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
